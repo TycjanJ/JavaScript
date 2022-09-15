@@ -1,0 +1,35 @@
+<html lang="pl-PL">
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<meta charset="utf-8">
+<title>zadanie 6 kod</title>
+</head>
+<body>
+
+<textarea name="a" rows=100 cols=200>
+<html>
+<head>
+<script type="text/javascript">
+function show_prompt()
+{
+var name=prompt("Napisz imię","Imię Nazwisko");
+if (name!=null && name!="")
+{
+document.write("Witaj " + name + "! jak się masz?");
+}
+}
+ function okno_zamknij_jankowski()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+<input type="button" value="zamknij okno" onclick="okno_zamknij_jankowski()"/>
+</body>
+</html>
+</textarea>
+
+</body>
+</html>

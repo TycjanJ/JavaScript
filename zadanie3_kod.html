@@ -1,0 +1,53 @@
+<html lang="pl-PL">
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<meta charset="utf-8">
+<title>zadanie 2 kod</title>
+</head>
+<body>
+
+<textarea name="a" rows=100 cols=200>
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_jankowski()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+<p style="font-size: 30px;"><strong><b><i>Zagadnienia teoretyczne:</i></b></strong></p>
+<p style="font-size: 20px;"><b>1) Rodzaje okienek </b></p>
+	<p>Okienko alert – wyświetlająca okienko dialogowe z informacją i przyciskiem OK, <br>
+	Okienko prompt – generująca okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu. <br>
+	Okienko confirm służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).</p>
+<p style="font-size: 20px;"><b>2) Konwersji liczb </b></p>
+	<p>Wczytanie zmiennej z użyciem prompt wykonywane jest jako ciąg znaków dlatego konieczna jest<br>
+	konwersji z ciągu znaków na wartości liczbowe aby wykonywac obliczenia.<br>
+	parseFloat(zmienna) - konwersja zmiennej do typu float<br>
+	parseInt(zmienna) - konwersja zmiennej do typu int (liczbowego)<br>
+	toString(zmienna) - konwersja zmiennej do typu łańcuchowego</p>
+<p style="font-size: 20px;"><b>3) Typy zmiennych w Javascript </b></p>
+	<p>Number -> Typ liczbowy zmienna całkowite zmiennoprzecinkowe<br>
+	String -> Typ tekstowy<br>
+	Boolea -> Typ logiczny<br>
+	Null -> Pusta zawartość<br>
+	Undefined -> Typ niezidentyfikowany<br>
+	Object -> Obiekt<p>
+<p style="font-size: 20px;"><b>4) Trzy zasady nadawania nazw zmiennych </b></p>
+	<p>1. Nazwa zmiennej musi się zaczynać od litery, znaku "$" lub "_", może zawierać tylko litery (bez polskich znaków), cyfry oraz "$" i "_".<br>
+	Poprawne nazwy zmiennych: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz<br>
+	Błędne nazwy zmiennych: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko.<br>
+	2. Wielkość liter ma znaczenie.<br>
+	Rekord i rekord to dwie różne zmienne! Jest to bardzo częsta przyczyna błędów w kodzie początkujących programistów.<br>
+	3. Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.</p>
+<form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_jankowski()"/>
+</form>
+</body>
+</html>
+</textarea>
+
+</body>
+</html>
