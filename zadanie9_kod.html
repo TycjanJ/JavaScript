@@ -6,6 +6,29 @@
 </head>
 <body>
 <textarea name="a" rows=100 cols=200>
+<html>
+<body>
+<div style="color:green;font-size:54px;">
+<script language="JavaScript">
+var D1_jan=prompt("Dzien 1=","");
+var G1_jan=prompt("godzina pierwszego dnia=","");
+var D2_jan=prompt("Dzien 2=","");
+var G2_jan=prompt("godzina drugiego dnia=","");
+var suma;
+var suma2;
+var suma3;
+var a=parseFloat(D1_jan);
+var b=parseFloat(D2_jan);
+suma=(a-b)*86400;
+if(suma<0)suma=suma*-1;
+suma2=(G1_jan-G2_jan)*3600;
+if(suma2<0)suma2=suma2*-1;
+suma3=suma2+suma;
+document.write("miedzy"+a+" dniem stycznia  godziną "+G1_jan+" a "+b+" dniem stycznia godziny "+G2_jan+" mineło "+suma3+" sekund");
+</script>
+
+</body>
+</html>
 
 </textarea>
 </body>
