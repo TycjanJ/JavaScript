@@ -6,14 +6,22 @@
 </head>
 <body>
 <textarea name="a" rows=100 cols=200>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <body>
 <div style="color:green;font-size:34px;">
 <script language="JavaScript">
-var m_jan=prompt("wprowadz m=","");
-var a_jan=parseInt(m_jan);
-var a_jan1=a_jan*2;
-document.write("1/"+a_jan+"=1/"+a_jan1+"+1/"+a_jan1+" <br>");
+var a=parseFloat(prompt("wprowadz A=",""));
+var b=parseFloat(prompt("wprowadz A=",""));
+var c1=a**3;
+var c2=3*(a**2)*b;
+var c3=3*a*(b**2);
+var c4=b**3;
+var wynik=c1+c2+c3+c4;
+document.write("( "+a+" + "+b+" )^3= "+a+"^3 + 3*(("+a+")^2*("+b+") + 3*("+a+")*(("+b+")^2 + "+a+"^3 = "+c1+ " + "+c2+ " + "+c3+ " + "+c4+ " + = "+wynik+" " );
+</script>
+</body>
+</html>
 </script>
 </body>
 </html>
