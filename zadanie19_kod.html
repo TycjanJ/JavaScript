@@ -1,0 +1,61 @@
+<html lang="pl-PL">
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<meta charset="utf-8">
+<title>zadanie 13 kod</title>
+</head>
+<body>
+<textarea name="a" rows=100 cols=200>
+<html>
+<head>
+<title>
+program obliczajacy pole i obwod postokata
+</title>
+<script language="JavaScript">
+function pole_jankowski(a,b)
+{
+a_jan=parseFloat(a);
+b_jan=parseFloat(b);
+pole_jan=a_jan*b_jan;
+document.getElementsByName('obj')[0].value=pole_jan.toFixed(2); /* na dokument */
+alert("pole="+pole_jan.toFixed(2)+" cm^2"); /*do okna Alert */
+pokaz1.innerHTML="pole="+pole_jan.toFixed(2)+" cm^2"+"<br>";  /* do tabeli */
+}
+function obwod_jankowski(a,b)
+{
+a_jan=parseFloat(a);
+b_jan=parseFloat(b);
+obw_jan=(2*a_jan)+(2*b_jan);
+document.getElementsByName('pole')[0].value=obw_jan.toFixed(2);
+alert("obwód="+obw_jan.toFixed(2)+" cm");
+pokaz2.innerHTML="obwód="+obw_jan.toFixed(2)+"cm";
+}
+</script>
+</head>
+<body>
+Pobliczanie pola i obwodu prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="pole_jankowski(this.promien.value,this.wysokosc.value); obwod_jankowski(this.promien.value,this.wysokosc.value);return false">
+Podaj a=
+<input size="6" name="promien">
+Podaj b=
+<input size="6" name="wysokosc">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+pole=
+<input size="6" name="obj">
+obwód=
+<input size="6" name="pole">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
+</textarea>
+</body>
+</html>
