@@ -1,0 +1,43 @@
+<html lang="pl-PL">
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<meta charset="utf-8">
+<title>zadanie 14a kod</title>
+</head>
+<body>
+<textarea name="a" rows=100 cols=200>
+
+<html>
+<body>
+<div style="color:green;font-size:34px;">
+<script>
+var b_jan=prompt("Podaj b=","");
+var bb_jan=parseFloat(b_jan);
+var c_jan=prompt("Podaj c=","");
+var cc_jan=parseFloat(c_jan);
+
+var pitagoras;
+var a_jan;
+
+pitagoras=Math.pow(c_jan,2)-Math.pow(b_jan,2);
+a_jan=Math.sqrt(pitagoras,2);
+
+var sin_alfa;
+sin_alfa=a_jan/c_jan;
+
+var cos_alfa;
+cos_alfa=b_jan/c_jan;
+
+var tg_alfa;
+tg_alfa=a_jan/b_jan;
+
+var ctg_alfa;
+ctg_alfa=b_jan/a_jan;
+document.write("sin (alfa)="+sin_alfa.toFixed(2)+"<br>cos (alfa)="+cos_alfa.toFixed(2)+"<br>tg (alfa)="+tg_alfa.toFixed(2)+"<br>ctg (alfa)="+ctg_alfa.toFixed(2)+"<br>");
+ </script>
+ </div>
+</body>
+</html> 
+</textarea>
+</body>
+</html>

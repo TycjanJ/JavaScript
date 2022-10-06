@@ -1,0 +1,46 @@
+
+<!DOCTYPE html> 
+ <head> 
+ <title> Użycie fukcji </title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+ <div style="color:navy;font-size:50px;">
+ <script language="JavaScript">
+ var a=parseFloat(prompt("podaj a=","")); 
+                var b=parseFloat(prompt("podaj b=","")); 
+ 
+                function suma_jan(a, b)
+                { 
+                    return a + b; 
+                }
+                function  odejmowanie_jan(a, b)
+                {
+                    return a - b;
+                }
+                function mnożenie_jan(a, b)
+                {
+                    return a * b;
+                }
+                function do_kwadratu_jan(a, b)
+                {
+                    return (a*a)
+                }
+                function do_kwadratu2_jan(a, b)
+                {
+                    return (b*b)
+                }
+				function reszta_z_dzielenia_a_przez_b_jan(a, b)
+                {
+                    return (a%b)
+                }
+ 
+document.write("Wynik dodawania= "+suma_jan(a, b)+"<br>"); 
+document.write("Wynik odejmowania= "+odejmowanie_jan(a, b)+"<br>");
+document.write("Wynik mnożenia= "+mnożenie_jan(a, b)+"<br>");
+document.write("Wynik podniesienia do kwadratu:   a = "+do_kwadratu_jan(a, b)+"    b = "+do_kwadratu2_jan(a, b)+"<br>");
+document.write("Wynik reszty z dzielenia ="+reszta_z_dzielenia_a_przez_b_jan(a, b)+"<br>");
+</script>
+</div>
+</body>
+</html>

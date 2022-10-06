@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div style="color:green;font-size:34px;">
+<script language="JavaScript">
+var c=parseFloat(prompt("wprowadz C=",""));
+var b=parseFloat(prompt("wprowadz B=",""));
+var a=math.sqrt();
+var c2=3*(a**2)*b;
+var c3=3*a*(b**2);
+var c4=b**3;
+var wynik=c1+c2+c3+c4;
+document.write("" );
+</script>
+</body>
+</html>

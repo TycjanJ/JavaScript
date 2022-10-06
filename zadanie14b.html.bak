@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<div style="color:green;font-size:34px;">
+<script language="JavaScript">
+var x_jan=parseFloat(prompt("wprowadz radiany=",""));
+var stopnie_jan=(180*x_jan)/math.pi;
+document.write("stopnie="+stopnie_jan+" ");
+var s_jan=parseFloat(prompt("wprowadz stopnie=",""));
+var radiany_jan=(math.pi*s_jan)/180;
+document.write("radiany="+radiany_jan+" ");
+</script>
+</body>
+</html>
