@@ -1,0 +1,73 @@
+<html lang="pl-PL">
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<meta charset="utf-8">
+<title>zadanie 22 kod</title>
+</head>
+<body>
+<textarea name="a" rows=100 cols=200>
+<html>
+<head>
+<title>Zadanie 22</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+function dlugosc(a_jan,c_jan)
+{
+ a_jan=parseFloat(a_jan);
+ c_jan=parseFloat(c_jan);
+ b_jan=Math.sqrt(c_jan*c_jan-a_jan*a_jan);
+ h_jan=b_jan;
+
+ document.getElementsByName('wys')[0].value=h_jan.toFixed(2);
+ alert("Wysokość (h)="+h_jan.toFixed(2)+" m");
+ wysokosc.innerHTML="Wysokość (h)="+h_jan.toFixed(2)+" m"+"<br>";
+}
+function obwod_jan(a_jan,c_jan)
+{
+ a_jan=parseFloat(a_jan);
+ c_jan=parseFloat(c_jan);
+ b_jan=Math.sqrt(c_jan*c_jan-a_jan*a_jan);
+ radian_jan=Math.atan2(a_jan,b_jan);
+ stopnie_jan=radian_jan*(180/Math.PI);
+ document.getElementsByName('kat')[0].value=stopnie_jan.toFixed(2);
+ alert("Kąt="+stopnie_jan.toFixed(2)+" stopni");
+ kat_stopnie.innerHTML="Alfa="+stopnie_jan.toFixed(2)+" stopni";
+}
+function okno_zamknij_jankowski_kod()
+{
+window.close()
+}
+</script>
+</head>
+<body>
+Obliczanie drabiny 
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="dlugosc(this.odl_dana_jan.value,this.s_dana_jan.value);
+obwod_jan(this.odl_dana_jan.value,this.s_dana_jan.value);return false">
+Podaj odległość=
+<input size="6" name="odl_dana_jan">
+Podaj ile przeleciał samolot=
+<input size="6" name="s_dana_jan">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Wysokość (h)=
+<input size="6" name="wys">
+Kąt=
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="wysokosc"></tr>
+<tr id="kat_stopnie"></tr>
+<br/>
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_jankowski_kod()"/>
+</table>
+</body>
+</html>
+</textarea>
+</body>
+</html>

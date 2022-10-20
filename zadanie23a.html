@@ -1,0 +1,35 @@
+<html>
+<body>
+<div style="color:navy;font-size:50px;">
+<script>
+var c_jan=parseFloat(prompt("podaj bok C=","")); 
+var b_jan=parseFloat(prompt("podaj bok B=",""));
+var a_jan=Math.sqrt((c_jan * c_jan)-(b_jan * b_jan));
+var obw_jan=a_jan+b_jan+c_jan;
+var pole_jan=(a_jan*b_jan)/2;
+var alfa_jan=Math.asin(a_jan/c_jan)*180/Math.PI;
+var beta_jan=90-alfa_jan;
+var h3_jan=(a_jan*b_jan)/c_jan;
+var sin_alfa_jan=a_jan/c_jan;
+var cos_alfa_jan=b_jan/c_jan;
+var tg_alfa_jan=a_jan/b_jan;
+var ctg_alfa_jan=b_jan/a_jan;
+document.write("Bok A = "+a_jan.toFixed(3)+"<br>");
+document.write("Bok B = "+b_jan.toFixed(3)+"<br>");
+document.write("Bok C = "+c_jan.toFixed(3)+"<br>");
+document.write("Obwód = "+obw_jan.toFixed(3)+"<br>");
+document.write("Pole = "+pole_jan.toFixed(3)+"<br>");
+document.write("Kąt alfa = "+alfa_jan.toFixed(3)+"<br>");
+document.write("Kąt beta = "+beta_jan.toFixed(3)+"<br>");
+document.write("Kąt gamma = 90 <br>");
+document.write("Wysokość 1 = "+a_jan.toFixed(3)+"<br>");
+document.write("Wysokość 2 = "+b_jan.toFixed(3)+"<br>");
+document.write("Wysokość 3 = "+h3_jan.toFixed(3)+"<br>");
+document.write("sin(alfa) = "+sin_alfa_jan.toFixed(3)+"<br>");
+document.write("cos(alfa) = "+cos_alfa_jan.toFixed(3)+"<br>");
+document.write("tg(alfa) = "+tg_alfa_jan.toFixed(3)+"<br>");
+document.write("ctg(alfa) = "+ctg_alfa_jan.toFixed(3)+"<br>");
+ </script>
+ </div>
+</body>
+</html> 

@@ -1,0 +1,32 @@
+<html lang="pl-PL">
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<meta charset="utf-8">
+<title>zadanie 14 kod</title>
+</head>
+<body>
+<textarea name="a" rows=100 cols=200>
+<html>
+<head>
+<title>Zadanie 14</title>
+</head>
+<body>
+<div style="color: blue; font-size: 30px;">
+<script>
+var N0 = prompt("Podaj ilość atomów pierwiastka promieniotwórczego","N0=");
+var t = prompt("Podaj czas w latach","t=");
+var T12 = prompt("Podaj period połowicznego rozpadu","T1/2=");
+var lambda = Math.log(2)/T12;
+var N = N0 * Math.pow(Math.E, ((-1*lambda)*t));
+document.write("N0="+N0+"[sztuk]",'<br/>');
+document.write("t="+t+"[lat]",'<br/>');
+document.write("T1/2="+T12+"[lat]",'<br/>');
+document.write("Lambda="+lambda.toFixed(7)+"[1/rok]",'<br/>');
+document.write("N="+N.toFixed(7)+"[sztuk]");
+</script>
+</div>
+</body>
+</html>
+</textarea>
+</body>
+</html>
