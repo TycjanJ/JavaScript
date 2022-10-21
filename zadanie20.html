@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Zadanie 20</title>
+<meta charset="UTF-8">
+<script language="JavaScript">
+function pole_jankowski(a_jan,b_jan,h_jan)
+{
+ a_jan=parseFloat(a_jan);
+ b_jan=parseFloat(b_jan);
+ h_jan=parseFloat(h_jan);
+ pole_wynik_jan=(a_jan+b_jan)*h_jan/2;
+ document.getElementsByName('pole')[0].value=pole_wynik_jan.toFixed(2);
+ alert("Pc="+pole_wynik_jan.toFixed(2)+" cm^2");
+ wprowadz_pole_jan.innerHTML="Pc="+pole_wynik_jan.toFixed(2)+" cm^2"+"<br>";
+}
+function obwod_jan(a_jan,b_jan,h_jan)
+{
+ a_jan=parseFloat(a_jan);
+ b_jan=parseFloat(b_jan);
+ h_jan=parseFloat(h_jan);
+ x_jan=Math.abs(a_jan-b_jan)/2;
+ c_jan=Math.sqrt(x_jan*x_jan+h_jan*h_jan);
+ d_jan=c_jan;
+ obwod_jan=a_jan+b_jan+c_jan+d_jan;
+ document.getElementsByName('obw')[0].value=obwod_jan.toFixed(2);
+ alert("Obwod="+obwod_jan.toFixed(2)+" cm");
+ wprowadz_obw_jan.innerHTML="Obwód="+obwod_jan.toFixed(2)+" cm";
+}
+</script>
+</head>
+<body>
+Obliczanie pola oraz obwodu trapezu równoramiennego
+<br>
+<br>
+<form name="formularz" action="..." onsubmit="pole_jankowski(this.a_dana_jan.value,this.b_dana_jan.value,this.h_dana_jan.value);
+obwod_jan(this.a_dana_jan.value,this.b_dana_jan.value,this.h_dana_jan.value);return false">
+Podaj a=
+<input size="6" name="a_dana_jan">
+Podaj b=
+<input size="6" name="b_dana_jan">
+Podaj h=
+<input size="6" name="h_dana_jan">
+<br>
+<br>
+<input type="submit" Value="oblicz" >
+<br>
+<br>
+Pole=
+<input size="6" name="pole">
+Obwód=
+<input size="6" name="obw">
+</form>
+<table>
+<tr id="wprowadz_pole_jan"></tr>
+<tr id="wprowadz_obw_jan"></tr>
+<br/>
+<br/>
+
+</table>
+</body>
+</html>
