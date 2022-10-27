@@ -1,0 +1,50 @@
+<html lang="pl-PL">
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<meta charset="utf-8">
+<title>zadanie 28 kod</title>
+</head>
+<body>
+<textarea name="a" rows=100 cols=200>
+
+
+<html>
+<head>
+<script type="text/javascript">
+function Router(marka_r,zasieg_r,typ_r)
+{
+this.marka=marka_r;
+this.zasieg=zasieg_r;
+this.typ=typ_r;
+}
+
+Router.prototype.wypisz = function () 
+{
+alert(this.marka + ' ' + this.zasieg+ ' ' + this.typ);
+};
+
+var router1 = new Router("UPC", "20m", "swiatlowodowy"); 
+var router2 = new Router("orange", "40m", "swiatlowodowy");
+router1.wypisz();
+router2.wypisz();
+document.write("dostęp do właściwości"+"<br>");
+document.write("router pierwszy"+" "+router1.marka+" "+router1.zasieg+" "+router1.typ+"<br>");
+document.write("router drugi"+" "+router2.marka+" "+router2.zasieg+" "+router2.typ+"<br>");
+router1.kolor="czarny";
+router2.kolor="bialy";
+Router.router_pokaz_Jankowski=function() {alert("kolor: " + router1.kolor)}
+Router.router_pokaz_Jankowski();
+Router.router_pokaz_Jankowski2=function() {alert("kolor: " + router2.kolor)}
+Router.router_pokaz_Jankowski2();
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe 
+</body>
+</html>
+
+
+</textarea>
+</body>
+</html>
