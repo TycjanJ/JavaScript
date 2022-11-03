@@ -11,11 +11,11 @@
 <html>
 <head>
 <script type="text/javascript">
-function Router(marka_r,zasieg_r,typ_r)
+function Router(marka_j,zasieg_j,typ_j)
 {
-this.marka=marka_r;
-this.zasieg=zasieg_r;
-this.typ=typ_r;
+this.marka=marka_j;
+this.zasieg=zasieg_j;
+this.typ=typ_j;
 }
 
 Router.prototype.wypisz = function () 
@@ -32,10 +32,6 @@ document.write("router pierwszy"+" "+router1.marka+" "+router1.zasieg+" "+router
 document.write("router drugi"+" "+router2.marka+" "+router2.zasieg+" "+router2.typ+"<br>");
 router1.kolor="czarny";
 router2.kolor="bialy";
-Router.router_pokaz_Jankowski=function() {alert("kolor: " + router1.kolor)}
-Router.router_pokaz_Jankowski();
-Router.router_pokaz_Jankowski2=function() {alert("kolor: " + router2.kolor)}
-Router.router_pokaz_Jankowski2();
 </script>
 </head>
 <body>
