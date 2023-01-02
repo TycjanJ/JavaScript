@@ -1,0 +1,60 @@
+<html lang="pl-PL">
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<meta charset="utf-8">
+<title>zadanie 79 kod</title>
+</head>
+<body>
+<textarea name="a" rows=100 cols=200>
+<html>
+<head>
+<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=utf-8">
+<meta charset="utf-8">
+<title>Zadanie 79</title>
+<style> td { border: 1px solid black; } </style>
+</head>
+<body>
+<div style="color:red;font-size:20px;">
+<script language="JavaScript">
+var x=prompt("podaj r");
+var r_jan=parseFloat(x);
+var licznik=0;
+for(var i=-Math.round(r_jan)-1; i<=Math.round(r_jan)+1; i++)
+{
+for(var j=-Math.round(r_jan)-1; j<=Math.round(r_jan)+1; j++)
+{
+if(Math.sqrt(i*i+j*j)<=r_jan)
+{
+licznik=licznik+1;
+}
+}
+}
+document.write("Ilość miejs kratowych= "+licznik)
+
+</script>
+</div>
+<table style="border: 1px solid black;">
+<tr>
+	<td>2.01</td>
+	<td>13</td>
+</tr>
+<tr>
+	<td>4.50</td>
+	<td>69</td>
+</tr>
+<tr>
+	<td>111</td>
+	<td>38669</td>
+</tr>
+<tr>
+	<td>1011</td>
+	<td>3210941</td>
+</tr>
+</table>
+</body>
+
+</html>
+
+</textarea>
+</body>
+</html>
